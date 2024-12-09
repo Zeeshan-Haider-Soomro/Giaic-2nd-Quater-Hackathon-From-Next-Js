@@ -19,7 +19,8 @@ const Header = () => {
   };
 
   return (
-    <div className='xsm:justify-between flex justify-around items-center p-5'>
+    <div className='xsm:justify-between flex justify-around items-center p-5 
+    fixed w-[100%] top-0 left-0 bg-white z-50 '>
       <div className='flex items-center'>
         <Image className='h-8 w-14' src='/images/logo.png' alt='' width={20} height={20} />
         <h1 className='text-3xl font-bold'>Furniro</h1>
@@ -28,8 +29,8 @@ const Header = () => {
           <Link href='/'>Home</Link>
           <Link href='/shop'>Shop</Link>
           <Link href='/blog'>Blog</Link>
-          <Link href='/about-us'>About Us</Link>
-          <Link href='/contact-us'>Contact Us</Link>
+          <Link href='/check-out'>About Us</Link>
+          <Link href='/contact'>Contact Us</Link>
         </div>
       <Drawer className='w-full' onClose={onClose} open={open}>
       <div className=' flex justify-center items-center gap-[30px]'>
@@ -42,8 +43,8 @@ const Header = () => {
         <Link href='/'>Home</Link>
           <Link href='/shop'>Shop</Link>
           <Link href='/blog'>Blog</Link>
-          <Link href='/about-us'>About Us</Link>
-          <Link href='/contact-us'>Contact Us</Link>
+          <Link href='/check-out'>About Us</Link>
+          <Link href='/contact'>Contact Us</Link>
         </div>
       </Drawer>
       <div className='xsm:hidden sm:hidden md:flex flex items-center gap-[30px]'>
