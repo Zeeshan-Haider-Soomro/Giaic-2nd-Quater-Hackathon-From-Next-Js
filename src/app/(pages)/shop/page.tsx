@@ -38,7 +38,7 @@ const page = () => {
           <input className="w-8 text-center" type="number" placeholder="16" />
           <p>Short By</p>
           <input
-            className="text-center flex-wrap"
+            className="text-center flex-wrap xsm:w-[100px]"
             type="text"
             placeholder="default"
           />
