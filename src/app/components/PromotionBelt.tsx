@@ -1,45 +1,54 @@
 import React from 'react'
+import Image from 'next/image'
 
-const PromotionBelt = () => {
-  return (
-    <div>
-               <section className='flex justify-around flex-wrap items-center gap-5 bg-[#FAF3EA] p-5'>
-            <div className='flex items-center'>
-            <img src="/images/Group.png" alt="" />
-            <div className=''>
-                <p>High Quality</p>
-                <p>crafted from top materials</p>
-            </div>
-
-            </div>
-            <div className='flex items-center'>
-            <img src="/images/guarantee.png" alt="" />
-            <div className=''>
-                <p>Warranty Protection</p>
-                <p>Over 2 years</p>
-            </div>
-
-            </div>
-            <div className='flex items-center'>
-            <img src="/images/Vector (9).png" alt="" />
-            <div className=''>
-                <p>Free Shipping</p>
-                <p>Order over 150 $</p>
-            </div>
-
-            </div>
-            <div className='flex items-center'>
-            <img src="/images/Vector (10).png" alt="" />
-            <div className=''>
-                <p>24 / 7 Support</p>
-                <p>Dedicated support</p>
-            </div>
-
-            </div>
-            
-        </section>
-    </div>
-  )
+const Feature = () => {
+    return (
+        <div className="h-auto lg:h-[270px] bg-[#F9F1E7] mt-8 lg:mt-16 flex flex-col lg:flex-row items-center justify-evenly gap-6 lg:gap-0 px-4 xsm:p-10">
+            {[
+                {
+                    img: "/images/Group.png",
+                    title: 'High Quality',
+                    desc: 'crafted from top materials',
+                },
+                {
+                    img: "/images/guarantee.png",
+                    title: 'Warranty Protection',
+                    desc: 'Over 2 years',
+                },
+                {
+                    img: "/images/Vector (9).png",
+                    title: 'Free Shipping',
+                    desc: 'Order over 150 $',
+                },
+                {
+                    img: "/images/Vector (10).png",
+                    title: '24 / 7 Support',
+                    desc: 'Dedicated support',
+                },
+            ].map((feature) => (
+                <div
+                    key={feature.title}
+                    className="flex flex-col items-center lg:flex-row gap-3 lg:gap-4 max-w-[300px] md:max-w-[350px] text-center lg:text-left"
+                >
+                    <Image
+                        src={feature.img}
+                        alt={`${feature.title}-img`}
+                        width={60}
+                        height={60}
+                        className="w-[50px] h-[50px] lg:w-[60px] lg:h-[60px]"
+                    />
+                    <div>
+                        <h3 className="font-bold text-[16px] md:text-[18px] lg:text-[20px] xl:text-[25px]">
+                            {feature.title}
+                        </h3>
+                        <p className="text-[14px] md:text-[16px] lg:text-[18px] xl:text-[20px] text-gray-600">
+                            {feature.desc}
+                        </p>
+                    </div>
+                </div>
+            ))}
+        </div>
+    )
 }
 
-export default PromotionBelt
+export default Feature

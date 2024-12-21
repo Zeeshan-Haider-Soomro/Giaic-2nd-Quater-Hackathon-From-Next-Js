@@ -14,8 +14,8 @@ const Footer = () => {
             <p className='text-[#9F9F9F]'>Links</p>
             <Link href='/'>Home</Link>
             <Link href='/shop'>Shop</Link>
-            <Link href='/about'>About</Link>
-            <Link href='/check-out'>Contact</Link>
+            <Link href='/check-out'>Check out</Link>
+            <Link href='/contact'>Contact</Link>
         </div>
         <div className='flex flex-col gap-10 xsm:gap-5'>
             <p className='text-[#9F9F9F] py-5'>Help</p>
