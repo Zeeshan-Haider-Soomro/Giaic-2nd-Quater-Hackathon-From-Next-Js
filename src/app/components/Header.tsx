@@ -28,7 +28,7 @@ const Header = () => {
       </div>
         </Link>
         <div className='xsm:hidden sm:hidden md:flex gap-[30px] '>
-          <Link className='hover:text-[#b88e2f]' href='/'>Home</Link>
+          <Link className='hover:text-[#b88e2f]' href='/'>Home.</Link>
           <Link className='hover:text-[#b88e2f]' href='/shop'>Shop</Link>
           <Link className='hover:text-[#b88e2f]' href='/blog'>Blog</Link>
           <Link className='hover:text-[#b88e2f]' href='/contact'>Contact</Link>
